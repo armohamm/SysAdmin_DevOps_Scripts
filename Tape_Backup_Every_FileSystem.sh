@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-df -g |awk '{print $7}'|
+df -g |awk '{print $7}'|grep -v gsa|
 
 
  while IFS= read -r line
